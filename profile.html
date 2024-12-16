@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+</head>
+<body>
+    <h1>Welcome, {{ student.user.first_name }}!</h1>
+    <p><strong>Name:</strong> {{ student.user.first_name }} {{ student.user.last_name }}</p>
+    <p><strong>Class:</strong> {{ student.student_class }}</p>
+    <p><strong>Division:</strong> {{ student.division }}</p>
+    <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
